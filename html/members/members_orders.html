@@ -8,12 +8,12 @@
 	<meta name="keywords" content="ceramics,pottery,clay,bazaar ceramics,gallery">
 	<meta name="author" content="Heath Burton">
 	<title>Bazaar Ceramics – Member Order</title>
-	<script type="text/javascript" src="../../Scripts/imageCreator.js"></script>
+	<script type="text/javascript" src="../../Scripts/imagePreload.js"></script>
 	<script type="text/javascript" src="../../Scripts/formScripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles2.css">
 </head>
 
-<body onload="InsertImageSlices(); bodyInfoUpdate();">
+<body onload="bodyInfoUpdate();">
 
 	<div class="container">
 		<header class="pageHeading">
@@ -32,17 +32,17 @@
 			<div class="formDetailsContent">
 				<form id="form" action="#" method="get" onsubmit="submitForm(); return false;">
 					<ul class="wrapper">
-						<li class="form-row">
-							<label for="itemDescription">Item Description</label>
-							<input type="text" name="itemDescription" id="iDesc" value="Placeholder data only" size="40" readonly>
+						<li class="form-row" id="descInsert">
+							<!-- <label for="itemDescription">Item Description</label>
+							<input type="text" name="itemDescription" id="iDesc" value="Placeholder data only" size="40" readonly> -->
 						</li>
 						<li class="form-row">
 							<label for="quantity">Quantity:</label>
 							<input type="text" name="quantity" value="1" id="quantity">
 						</li>
-						<li class="form-row">
-							<label for="price">Price:</label>
-							<input type="text" name="price" id="price" value="" size="3" maxlength="5" readonly>
+						<li class="form-row" id="priceInsert">
+							<!-- <label for="price">Price:</label>
+							<input type="text" name="price" id="price" value="" size="3" maxlength="5" readonly> -->
 						</li>
 						<li class="form-row">
 							<label for="totalPrice">Total Price</label>
@@ -64,6 +64,5 @@
 		</footer>
 	
 	</div>
-
 </body>
 </html>
