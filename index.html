@@ -1,133 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bazaar Ceramics</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/styleshome.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/home/layout.css">
+  <link rel="stylesheet" href="/styles/home/styles.css">
+  <link rel="stylesheet" href="/styles/home/mobile.css">
+  <link rel="stylesheet" href="/styles/home/tablet.css">
+  <link rel="stylesheet" href="/styles/home/Laptop.css">
+  
 </head>
 
-<body>
-
-  <div class="container-fluid">
-
-    <!-- ### NAVBAR STUFF ### -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/logo/bazaar-logo.jpg" alt="Company Logo Image" width="150" height="100" id="logo" class="d-inline-block"> <span id="logotext">Bazaar Ceramics</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Mwmbers</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Policies & Procedures</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Privacy</a>
-              <a class="dropdown-item" href="#">Returns</a>
-              <a class="dropdown-item" href="#">Delivery & Care</a>
-              <a class="dropdown-item" href="#">Post Sales Care</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkA" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkA">
-              <a class="dropdown-item" href="/html/company_bg.html">Company Profile</a>
-              <a class="dropdown-item" href="/html/company_mission.html">Mission</a>
-              <a class="dropdown-item" href="#">Product Lines</a>
-              <a class="dropdown-item" href="#">Customer Testimonials</a>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </nav> <!-- End of NAVBAR -->
+<body> <!-- Beginning of Entire Page content -->
  
+  <header> <!-- ### Header area containing the Logo and Navbar ### -->
+      
+  <nav id="navbar">
+    <div id="logo">
+      <a id="logoA" href="index.html"><img src="images/logo/bazaar-logo.jpg" alt="Image of Bazaar Ceramics logo" id="logoImage"><span class="titleW">Bazaar Ceramics</span></a>
+    </div>
 
-    <!-- ### Content Area A ### -->
-    <div class="row contentA">
+    <label for="drop" class="toggle" id='main-toggle'><span class="nav-icon"></span></label>
+    <input type="checkbox" id="drop">
+      
+    <ul class="menu"> <!-- Start of Menu structure -->
+      <li><a class="current" href="index.html">Home</a></li>
+      <li><a class="" href="/html/members/members.html">Members</a></li>
+      
+                
+      <li>
+        <label for="drop-1" class="toggle">About Us +</label>
+        <a href="#">About Us</a>
+        <input type="checkbox" id="drop-1">
+        <ul>
+          <li><a class="tier2" href="/html/about/company_bg.html">Company Background</a></li>
+          <li><a class="tier2" href="/html/about/company_mission.html">Mission Statement</a></li>
+          <li><a class="tier2" href="/html/about/production.html">Production</a></li>
+          <li><a class="tier2" href="/html/about/testimonials.html">Testimonials</a></li>
+        </ul>
+      </li>
 
-      <div class="col-lg-6 text-center align-items-center"> <!-- First Column / Large image -->
-        <img src="images/homepage/bazaar07.jpg" alt="Picture of Bazaar Ceramics Building" id="homePicture" class="picture"></a>
+
+      <li> 
+        <label for="drop-2" class="toggle">Policies +</label>
+        <a href="#">Policies</a>
+        <input type="checkbox" id="drop-2">
+        <ul>
+          <li><a class="tier2" href="#">Privacy</a></li>
+          <li><a class="tier2" href="#">Returns</a></li>
+          <li><a class="tier2" href="#">Delivery</a></li>
+          <li><a class="tier2" href="#">Post Sales</a></li>
+        </ul>
+      </li>
+
+
+      <li><a href="#">FAQ</a></li>
+     
+    </ul> <!-- End of entire Menu structure -->
+  </nav>  
+
+  </header> <!-- End of Header Section (NAV)-->
+
+
+<!-- ### Home Page Content Area Top Section ### -->
+  <div class="container">
+    <div class="grid">
+
+      <div class="mainPicture"> <!-- Left Column content -->
+        <img src="images/homepage/bazaar07.jpg" alt="Picture of Bazaar Ceramics head office and showroom building" id="homePicture" class="picture">
       </div>
 
-      <div class="col-lg-6"> <!-- Second Column-->
-
-        <div class="row text-center align-items-center sidepica"> <!-- Top Picture and Text -->
-          <div class="col-lg-7"><p>Annual gallery showing</p></div>
-          <div class="col-lg-5">
-            <img src="images/homepage/bazaar_gallery.jpg" alt="Home page picture of Bazaar Ceramics" width="180" height="150" id="homePictureB" class="sidePicture"></a>
-          </div>
-        </div>
-
-        <div class="row text-center align-items-center sidepicb"> <!-- Bottom Picture and Text -->
-          <div class="col-lg-7"><p>Indigenous inspired art pieces</p></div>
-          <div class="col-lg-5 align-self-end">
-            <img src="images/homepage/bazaar14.jpg" alt="Home page picture of Bazaar Ceramics" width="180" height="150" id="homePictureC" class="sidePicture"></a>
-          </div>
-        </div>
-      
-      </div> <!-- End of Second Column-->
-
-    </div> <!-- End of First Content Area-->
-
-    <!-- ### Content Area B ### -->
-    <div class="row contentB">
-
-      <div class="col-lg-6 contentBcomp "> <!-- First column / text -->
-        <p class="textA text-center align-items-center">
+      <div class="contentBottomText">
+        <p class="mainPicDescription" id="mDesc">
           Bazaar Ceramics Studio has been operating for 20 years.  We started as a small collective, 
-          operating in the picturesque township of Hahndorf, South Australia - known for our quality 
-          arts and crafts. Over the years the studio has passed through a number of transformations.  
-          Currently we are well known for producing quality domestic ware and fine individually designed art pieces.  
+          operating in the picturesque township of Hahndorf, South Australia. We are known for our quality 
+          arts and crafts.
         </p>
-      </div> <!-- Enf of left column / text -->
-  
-      <div class="row col-lg-6 contentBSubmit"> <!-- Second Column / Submit feature -->
-  
-        <div class="row col-lg-12 text-center align-items-center"> <!-- right side text / instructions -->
-          <p>Enter your email address below and click Submit to recieve regular product updates, gallery show invites and other special offers</p>
+      </div>
+
+      <div class="topPicText">
+        <p>Regular Gallery Showings</p>
+      </div>
+
+      <div class="topPic">
+        <img src="images/homepage/bazaar_gallery.jpg" alt="A picture of an art gallery showing at Bazaar Ceramics show room" id="homePictureTop" class="picture sidePicture">
+      </div>
+      
+      <div class="bottomPicText">
+        <p>Quality Domestic Art Pieces</p>
+      </div>
+
+      <div class="bottomPic">
+        <img src="images/homepage/bazaar14.jpg" alt="Picture of quality domestic art pieces made by Bazaar Ceramics" id="sidePicBottom" class="picture sidePicture">
+      </div>
+
+      <div class="contentBottomEmailInstruct">
+        <p id="emailInstruct">Submit your email address below to be notified of product updates, gallery shows and other special offers</p>
+      </div>
+
+      <div class="inputBox">
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Name">
+          <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Email address">
+          <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Address">
         </div>
-  
-        <div class="row col-lg-12 text-center align-items-center">  <!-- Input field section -->
-          <div class="col-lg-6"><!-- input Field -->
-            <div id=inputBox>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-                </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="inputGroup-sizing-default">
-              </div>
-            </div>
-          </div> <!-- End of Input Div -->
-                    
-          <div class="col-lg-6 text-center align-items-center">
-            <button type="button" class="btn-lg btn-primary">Submit</button>
-          </div>
-          
-        </div> <!-- End of Input field section-->       
-     
-      </div> <!-- End of Second Column-->
-  
-    </div> <!-- End of Second Content Area-->
+      </div>
 
+      <div class="buttonDiv">
+        <button class="btnPrimary">Submit</button>
+      </div>
 
-  </div> <!-- End of container Div-->
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div> <!-- End of Grid container -->
+  </div> <!-- End of Content Container -->
+    
+  <!-- ## Start of Footer Content ### -->
+  <footer>
+    <div class="footerDiv">
+      <p>Website designed and developed by Heath Burton aka-Rubickdev</p>
+    </div>
+  </footer>
+
 </body>
 </html>
