@@ -1,0 +1,120 @@
+/* Page wide effects */
+body {
+  max-width: 100%;
+}
+
+#logotext {
+  font-size: 2rem;
+}
+
+
+/* Navbar  */
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.navbar-nav > li:hover{
+  color: rgb(146, 18, 18) !important; 
+}
+
+.navbar-nav > li:first-child {
+  margin-left: 50px;
+}
+
+.navbar .nav-item a {
+  color: rgb(153, 131, 131) !important;  
+}
+
+.navbar .dropdown-menu {
+  background-color: rgb(33, 37, 41);
+}
+
+/* 
+.dropdown-item {
+
+  background-color: rgba(0,0,0, .8);
+} */
+
+
+/* Content area A */
+.contentA {
+  padding-top: 50px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.3em;
+  max-width: 100%;
+}
+
+#homePicture {
+  width: 100%;
+  height: auto;
+}
+
+.sidepica,
+.sidepicb {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sidePicture {
+  margin: 10px;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Content area B */
+.contentB {
+  margin-top: 50px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2em;
+  background: #b9bdc4;
+}
+
+.contentBcomp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentBcomp p {
+  margin: 0 
+}
+
+#inputBox {
+  height: 100px;
+}
+
+.textA {
+  padding: 50px;
+  font-size: 1.2em;
+}
+
+.inputSubmit {
+  padding-top:20px;
+}
+
+.emailtext {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#inputGroup-sizing-default {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.contentBSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentBSubmit p {
+  margin: 0;
+  padding-top: 5%;
+}
