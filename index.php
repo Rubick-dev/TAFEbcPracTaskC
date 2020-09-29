@@ -1,3 +1,3 @@
 <?php 
-include_once( 'members.html'); 
+include_once( 'index.html'); 
 ?>
