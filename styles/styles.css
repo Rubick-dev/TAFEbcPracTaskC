@@ -27,6 +27,7 @@ div > ul {
   padding-inline-start: 5px;
   justify-content: left;
   align-items: flex-start;
+  padding-right: 10px;
 }
 
 img {
@@ -48,11 +49,13 @@ figcaption {
 
 
 /* Styling the Navigation menu items */
+
+#nav
 a {
   color: #02C8A7;
   text-decoration: none;
   text-transform: uppercase;
-}
+  }
 
 a:hover {
   text-decoration: underline;

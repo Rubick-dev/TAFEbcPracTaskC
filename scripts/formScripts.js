@@ -60,6 +60,6 @@ function submitForm(){
   if (conf===false){
     clearValues() 
   }
-  //I would make an else statement invoking the Sumbit method here however sicne the
+  //I would make an else statement invoking the Sumbit method here however since the
   // data isnt going anywhere i decided not to add it in 
 }

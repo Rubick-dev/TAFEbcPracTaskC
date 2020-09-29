@@ -18,7 +18,7 @@ let descFiller = `<label for="itemDescription">Item Description</label>
 
 /* Setting global variables*/
 let dispImg = "";
-let dirName = "images/slicedimages/"
+let dirName = "../../images/slicedimages/"
 let row = 0;
 let col = 0;
 
