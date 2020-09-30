@@ -1,7 +1,8 @@
 @media screen and (max-width: 500px) and (min-width: 50px) {
   
   :root {
-    --pastelGrey: #5F6366;
+    /* --pastelGrey: #5F6366; */
+    --pastelGrey: #262626;
     --pastelDarkBlue: #4D6D9A;
     --pastelBluey: #86B3D1;
     --pastelLightBlue: #99cED3;

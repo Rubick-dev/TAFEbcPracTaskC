@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #262626;
+}
+
+.container2 {
+  margin: 5% 8%;
+}
+.imageContainer {
+  width: 80%;
+  height: 540px;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+input[type="radio"]{
+  width: 125px;
+  height: 90px;
+  border: 1px solid white;
+  display: block;
+  margin-left: 25px;
+  -webkit-appearance: none;
+    margin-top: 15px;
+}
+
+.displayImage {
+  width: 1000px;
+  height: 500px;
+  border: 1px solid white;
+  position: absolute;
+  top: 377px;
+  right: 350px;
+}
+
+#imageOne {
+  background-image: url(../images/slideshow/openingclaysmall.jpg);
+  background-size: cover;
+}
+
+#imagetwo {
+  background-image: url(../images/slideshow/openingclaysmall.jpg);
+  background-size: cover;
+}
+
+#imagethr {
+  background-image: url(../images/slideshow/openingclaysmall.jpg);
+  background-size: cover;
+}
+
+#imageOfou {
+  background-image: url(../images/slideshow/openingclaysmall.jpg);
+  background-size: cover;
+}
+
+#imagefiv {
+  background-image: url(../images/slideshow/openingclaysmall.jpg);
+  background-size: cover;
+}
