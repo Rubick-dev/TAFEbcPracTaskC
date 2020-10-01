@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Production</title>
+
+  <script type="text/javascript" src="../../scripts/slideshow.js"></script>
+
   <link rel="stylesheet" href="../../styles/home/layout.css">
   <link rel="stylesheet" href="../../styles/home/layout.css">
   <link rel="stylesheet" href="../../styles/home/styles.css">
@@ -16,7 +19,7 @@
   
 </head>
 
-<body> <!-- Beginning of Entire Page content -->
+<body onload="startPage();"> 
  
   <header> <!-- ### Header area containing the Logo and Navbar ### -->
       
@@ -70,36 +73,36 @@
 
   <div class="container2"> <!--  ## Company Productction Pricess content Start Area ## -->
 
-    <div class="row">
-      <div class="col">
-        <img class="tnImage" src="../../images/slideshow/thumbs/openingclaysmall.jpg" id="imageOne">
+    <div class="row" id="parentImage">
+      <div class="col tnImageDiv">
+        <img class="tnImage" id="imageOne" src="../../images/slideshow/thumbs/openingclaysmall.jpg">
         <div class="desc">
           Opening Clay
         </div>
       </div>
     
-      <div class="col">
+      <div class="col tnImageDiv">
         <img class="tnImage" src="../../images/slideshow/thumbs/liftingclaysmall.jpg" id="imageTwo">
         <div class="desc">
           Lifting Clay
         </div>
       </div>
 
-      <div class="col">
+      <div class="col tnImageDiv">
         <img class="tnImage" src="../../images/slideshow/thumbs/sequence12small.jpg" id="imageThr">
         <div class="desc">
           Shaping Clay
         </div>
       </div>
 
-      <div class="col">
+      <div class="col tnImageDiv">
         <img class="tnImage" src="../../images/slideshow/thumbs/finishing2small.jpg" id="imageFou">
         <div class="desc">
           Finishing Clay
         </div>
       </div>
 
-      <div class="col">
+      <div class="col tnImageDiv">
         <img class="tnImage" src="../../images/slideshow/thumbs/finishingsmall.jpg" id="imageFiv">
         <div class="desc">
           Fine Finishing Clay
@@ -108,13 +111,13 @@
     </div> <!-- Closing Row Div encasing the 5 Thumbnail images-->
 
     <div class="displayImage" id="selectedImage">
-      <img src="../../images/slideshow/enlarged/openingclay.jpg" class="">
+      <img src="../../images/slideshow/enlarged/openingclay.jpg" class="mainPicture fade-in">
     </div>
 
 
   <div class="prodTextInfo">
     <div>
-      <p class="topText">
+      <p class="topText fade-in">
         Bazaar Ceramics are constantly experimenting with new designs and techniques. 
         The process of developing a particular range of ceramics, starts with the design process. 
         The ceramic designers and gallery director meet regularly to discuss new ideas for 
@@ -124,15 +127,15 @@
       </p>
     </div>
   
-    <hr class="seperator">
+    <hr class="seperator fade-in">
   
     <div class="imgandtext">
-      <div class="prodResult">
+      <div class="prodResult fade-in">
         <img src="../../images/slideshow/prodresult.jpg">
       </div>
 
       <div>
-        <p class="bottomText">
+        <p class="bottomText fade-in">
           Promising designs are developed into working drawings which the production potters use 
           to create the ceramic forms.  Depending on the type of decoration, the designers may 
           apply the decoration at this stage, or after they have been “bisqued” (fired to 1000 
@@ -142,7 +145,7 @@
           well in the gallery, they become a “standard line”. 
         </p>
       </div>
-      
+
     </div> 
   </div> <!-- End of ProdTextInfo Div-->
   

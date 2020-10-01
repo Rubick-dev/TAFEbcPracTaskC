@@ -10,7 +10,7 @@ margin-top: 30px;
 }
 
 .container2 {
-  margin: 5% 5%;
+  margin: 0 5% 5% 5%;
 }
 
 .row {
@@ -32,6 +32,10 @@ margin-top: 30px;
   cursor: pointer;
 }
 
+.tnImage:hover {
+opacity: 90%;
+}
+
 .desc {
   width: 80%;
   display: block;
@@ -42,7 +46,7 @@ margin-top: 30px;
 }
 
 .displayImage img{
-  width: auto;
+  width: 100%;
   height: auto;
   border: 1px solid white;
   margin-top: 40px;
@@ -68,10 +72,43 @@ margin-top: 30px;
 }
 
 .prodResult {
- 
+ width: 100%;
 }
 
 .bottomText {
   margin: 50px;
   font-size: .8em;
+}
+
+
+.fade-in {
+  animation: fadeIn ease 4000ms;
+  -webkit-animation: fadeIn ease 4000ms;
+  -moz-animation: fadeIn ease 4000ms;
+  -o-animation: fadeIn ease 4000ms;
+  -ms-animation: fadeIn ease 4000ms;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
