@@ -4,56 +4,74 @@ body {
   background: #262626;
 }
 
-.container2 {
-  margin: 5% 8%;
-}
-.imageContainer {
-  width: 80%;
-  height: 540px;
-  border: 1px solid white;
-  padding: 10px;
+h1 {
+text-align: center;
+margin-top: 30px;
 }
 
-input[type="radio"]{
-  width: 125px;
-  height: 90px;
+.container2 {
+  margin: 5% 5%;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 20%;
+  padding: 5px;
+}
+
+.tnImage {
+  width: 80%;
+  height: auto;
   border: 1px solid white;
   display: block;
   margin-left: 25px;
-  -webkit-appearance: none;
-    margin-top: 15px;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
-.displayImage {
-  width: 1000px;
-  height: 500px;
+.desc {
+  width: 80%;
+  display: block;
+  font-size: .7em;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.displayImage img{
+  width: auto;
+  height: auto;
   border: 1px solid white;
-  position: absolute;
-  top: 377px;
-  right: 350px;
-}
-
-#imageOne {
-  background-image: url(../images/slideshow/openingclaysmall.jpg);
+  margin-top: 40px;
   background-size: cover;
 }
 
-#imagetwo {
-  background-image: url(../images/slideshow/openingclaysmall.jpg);
-  background-size: cover;
+.prodTextInfo {
+  width: 80%;
+  margin-top: 50px;
 }
 
-#imagethr {
-  background-image: url(../images/slideshow/openingclaysmall.jpg);
-  background-size: cover;
+.topText {
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+.seperator {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-#imageOfou {
-  background-image: url(../images/slideshow/openingclaysmall.jpg);
-  background-size: cover;
+.imgandtext{
+  display: flex;
 }
 
-#imagefiv {
-  background-image: url(../images/slideshow/openingclaysmall.jpg);
-  background-size: cover;
+.prodResult {
+ 
+}
+
+.bottomText {
+  margin: 50px;
+  font-size: .8em;
 }
