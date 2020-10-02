@@ -76,10 +76,9 @@ opacity: 90%;
 }
 
 .bottomText {
-  margin: 50px;
+  margin: 0 10px 0 50px;
   font-size: .8em;
 }
-
 
 .fade-in {
   animation: fadeIn ease 4000ms;
@@ -111,4 +110,35 @@ opacity: 90%;
 @-ms-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
+}
+
+
+/* Production page Bottom image and tezt alignment at smaller sizes */
+@media screen and (max-width: 1000px) {
+
+  .prodTextInfo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;  
+  }
+
+  .imgandtext{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 80%; */
+  } 
+
+  .prodResult img {
+    align-items: center;
+    width: 100%;
+  }
+
+.bottomText {
+  font-size: .7em;
+  margin: 50px 0 50px 0;
+  width: 100%;
+}
+
 }
