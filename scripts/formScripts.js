@@ -63,3 +63,27 @@ function submitForm(){
   //I would make an else statement invoking the Sumbit method here however since the
   // data isnt going anywhere i decided not to add it in 
 }
+
+
+/// POPUP WINDOW OPENER AND CLOSER CONTENT
+// Global Variable
+var windowChecker = "";
+
+// Window.Open function to only allow one window to pop up on item click.
+function openMembersOrderWindow(fileName){
+  if(windowChecker) {
+     windowChecker.close();
+  }
+  var omow = window.open(fileName,'currentMOWindow', "width=1000, height=900, resizable=yes");
+  return omow;
+}
+
+// Close window function
+function closeWindow(){
+  if(windowChecker.closed) {
+    //DoNothing
+  } else {
+    windowChecker.close();
+  }
+  return;
+}
