@@ -24,7 +24,7 @@ function displayImage(e){
 
 
   if (e.target !== e.currentTarget) {
-    let imageLarge = e.target.id;
+    var imageLarge = e.target.id;
     
    
     switch(imageLarge) {
